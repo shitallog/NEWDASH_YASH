@@ -1,0 +1,954 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weekly Super Contest</title>
+    <!-- site favicon -->
+    <link rel="shortcut icon" type="image/png" href="https://yesworld.io/yesworld/assets/images/logoIcon/favicon.png">
+		<!-- ============app============ -->
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	<link rel="stylesheet" href="https://yesworld.io/yesworld/assets/templates/basic/app/css/style.css">
+<style type="text/css">
+    .animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 20px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+</style>
+<script>
+// Set the date we're counting down to 
+//var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+var countDownDate = new Date(1651017600 * 1000);
+//alert(countDownDate);
+//alert(1650604165);
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+   d = new Date();
+  var now =  d.getTime() - (d.getTimezoneOffset() * 60000);
+//alert(now);
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = "Endin "+days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+console.log('2022-04-20--2022-04-26');
+</script>
+    </head>
+<body>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BLXF1R6L1E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BLXF1R6L1E');
+</script>
+ <!-- loader -->
+    <div id="loader">
+                        <div class="spinner-border text-warning" role="status"></div>
+
+    </div>
+    <!-- * loader -->
+<!-- ============Header Section Ends Here============ -->
+
+   
+        <div class="modal fade panelbox panelbox-right" id="sidebarPanel" tabindex="-1" role="dialog">
+   
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <!-- profile box -->
+                    <div class="profileBox pt-2 pb-2">
+                        <div class="image-wrapper">
+							
+                        </div>
+                        <div class="in">
+                            <strong>My Affiliate Code > 4812178</strong>
+							 <strong>Affiliate ID   5074558</strong>
+                            <div class="text-muted"> </div>
+                        </div>
+                        <a href="#" class="btn btn-link btn-icon sidebar-close" data-bs-dismiss="modal">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </a>
+                    </div>
+                    <div class="wallet-card">
+                <!-- Balance -->
+                <div class="balance">
+                    <div class="left">
+                        <span class="title">Total Balance</span>
+                        <h3>USD 0</h3>
+                        <span class="title">YES Balance</span>
+                                                <h3>YES 0</h3>
+                    </div>
+                    <div class="right">
+                        <a href="#" class="button">
+                        <ion-icon name="disc"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <!-- * Balance -->
+                <!-- Wallet Footer -->
+                <div class="wallet-footer">
+                    <div class="item">
+                        <a href="package.html">
+                            <div class="icon-wrapper bg-success">
+                               <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                            </div>
+                            <strong>Buy Staking Packages</strong>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="yes_token.html">
+                            <div class="icon-wrapper">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </div>
+                            <strong>Swap Yes Token </strong>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="deposit_yes_token.html">
+                            <div class="icon-wrapper bg-secondary">
+                                  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                            </div>
+                            <strong>Deposit Yes Token </strong>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="withdraw.html" >
+                            <div class="icon-wrapper bg-danger">
+                                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                            </div>
+                            <strong>Withdraw</strong>
+                        </a>
+                    </div>
+                  
+
+                </div>
+                <!-- * Wallet Footer -->
+            </div>
+                    <div class="listview-title mt-1">Menu</div>
+                    <ul class="listview flush transparent no-line image-listview">
+                         
+                    <li>
+                            <a href="profile-setting.html" class="item">
+                                <div class="icon-box bg-primary">
+                                 <i class="fa fa-user" aria-hidden="true"></i>
+                                </div>
+                                <div class="in">
+                                My Profile                                </div>
+                            </a>
+                        </li> 
+                    <li>
+                            <a href="buyplanlist.html" class="item">
+                                <div class="icon-box bg-primary">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </div>
+                                <div class="in">
+                                My Staking Packages                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="referrals.html" class="item">
+                                <div class="icon-box bg-primary">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                    
+                                </div>
+                                <div class="in">
+                                    My Direct Referrals                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="genealogy_date_wise.html" class="item">
+                                <div class="icon-box bg-primary">
+                               <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                </div>
+                                <div class="in">
+                                    Date wise Team Staking                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="referrallink.html" class="item">
+                                <div class="icon-box bg-primary">
+                                  <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                </div>
+                                <div class="in">
+                                    Referral Link                                </div>
+                            </a>
+                        </li>
+						<!--  <li>
+                            <a href="transfer.html" class="item">
+                                <div class="icon-box bg-primary">
+                              <ion-icon name="trail-sign-outline"></ion-icon>
+                                </div>
+                                <div class="in">
+                               Balance Transfer                                </div>
+                            </a>
+                        </li> -->
+
+                      <!--   <li>
+                            <a href="transactions_log.html" class="item">
+                                <div class="icon-box bg-primary">
+                                <ion-icon name="folder"></ion-icon>
+                                </div>
+                                <div class="in">
+                                All Transactions                                 </div>
+                            </a>
+                        </li> -->
+                        
+                        <li>
+                            <a href="history.html" class="item">
+                                <div class="icon-box bg-primary">
+                               <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                </div>
+                                <div class="in">
+                                Deposit Log                                 </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="yes_token_log.html" class="item">
+                                <div class="icon-box bg-primary">
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                </div>
+                                <div class="in">
+                                Yes Token Log                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="withdraw_log.html" class="item">
+                                <div class="icon-box bg-primary">
+                               <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                </div>
+                                <div class="in">
+                                Withdraw Log                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="level_commission.html" class="item">
+                                <div class="icon-box bg-primary">
+                                <ion-icon name="contrast"></ion-icon>
+                                </div>
+                                <div class="in">
+                                Referral Log                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="daily_commission.html" class="item">
+                                <div class="icon-box bg-primary">
+                                <ion-icon name="calendar"></ion-icon>
+                                </div>
+                                <div class="in">
+                                Daily Staking Log                                </div>
+                            </a>
+                        </li>
+						
+						
+
+    					<li>
+        					<a href="mentor_commission.html" class="item">
+            					<div class="icon-box bg-primary">
+            				        <ion-icon name="bar-chart-outline"></ion-icon>
+            					</div>
+            					<div class="in">Daily Mentor Log</div>
+        					</a>
+    					</li>
+                        <li>
+                            <a href="reward_royalty_commission.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="bar-chart-outline"></ion-icon>
+                                </div>
+                                <div class="in">Reward Log</div>
+                            </a>
+                        </li>
+                       <!--  <li>
+                            <a href="reward_log.html" class="item">
+                                <div class="icon-box bg-primary">
+                                    <ion-icon name="bar-chart-outline"></ion-icon>
+                                </div>
+                                <div class="in">Reward</div>
+                            </a>
+                        </li> -->
+					
+					
+					
+						
+
+
+                        <li>
+                            <a href="change-password.html" class="item">
+                                <div class="icon-box bg-primary">
+                               <ion-icon name="finger-print"></ion-icon>
+                                </div>
+                                <div class="in">
+                                   Change Password                                </div>
+                            </a>
+                        </li>
+
+                      
+
+                    </ul>
+                  
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+		
+            <div id="appCapsule">         <!-- App Header -->
+    <div class="appHeader">
+        <div class="left">
+            <a href="#" class="headerButton goBack">
+             <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="pageTitle" style="color:white;">
+       <h3 class="animate-charcter"> Weekly Super Contest</h3>
+        </div>
+       
+    </div>
+	<br>
+    <div class="row justify-content-center">
+        <div class="col-lg-8  mt-2">
+            <div class="card b-radius--10 ">
+                <div class="card-body p-0">
+                    <div align="center" style="margin: 20px;"><h3 class="animate-charcter">SUPER KING OF THE WEEK - <img src="assets/images/taj2.png" style="width: 50px;" class='iconDetails'> SADIYA SHAIKH</h3></div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row justify-content-center">
+        <div class="col-lg-8  mt-2">
+            <div class="card b-radius--10 ">
+                <div class="card-body p-0">
+                    <div class="table-responsive--sm table-responsive">
+                        <table class="table bg-secondary" style="font-weight: bold; font-size: 12px; color: #FFF !important;">
+                            <thead>
+                                <tr>
+                                    <th colspan="4" align="center">                              
+                                                                        <p align="center"><h3 align="center" class="text-white">My Super Rank - Not Qualified</h3></p>
+                                                                        </th>
+                                </tr>
+                            <tr>
+                                <th colspan="4" align="center"> 
+                                    <p align="center" id="demo"></p>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Super Rank</td>
+                                <td>Name</td>
+                                <td>Staking</td>
+                                <td>Rewards</td>
+                            </tr>
+                                                        <tr  >
+                                <td data-label="#Transaction ID">1</td>
+                                <td data-label="Gateway" data-id="3698945">Prashanta  Kumar Nayak                                </td>
+                                <td data-label="Amount" data-id="2500">
+                                    <strong>2,500</strong>
+                                </td>
+                                <td data-label="Status">10000</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">2</td>
+                                <td data-label="Gateway" data-id="9940302">Amareswar Sahu                                </td>
+                                <td data-label="Amount" data-id="1500">
+                                    <strong>1,500</strong>
+                                </td>
+                                <td data-label="Status">4000</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">3</td>
+                                <td data-label="Gateway" data-id="2803060">Sagar Sarvaiya                                </td>
+                                <td data-label="Amount" data-id="500">
+                                    <strong>500</strong>
+                                </td>
+                                <td data-label="Status">4000</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">4</td>
+                                <td data-label="Gateway" data-id="9510934">CHITTA RANJAN MOHANTY                                </td>
+                                <td data-label="Amount" data-id="400">
+                                    <strong>400</strong>
+                                </td>
+                                <td data-label="Status">2000</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">5</td>
+                                <td data-label="Gateway" data-id="2124703">Pawan Sharma                                </td>
+                                <td data-label="Amount" data-id="200">
+                                    <strong>200</strong>
+                                </td>
+                                <td data-label="Status">2000</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">6</td>
+                                <td data-label="Gateway" data-id="2592294">Sunaina Mandal                                </td>
+                                <td data-label="Amount" data-id="200">
+                                    <strong>200</strong>
+                                </td>
+                                <td data-label="Status">1000</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">7</td>
+                                <td data-label="Gateway" data-id="7806915">Bhikhubhai D patel                                </td>
+                                <td data-label="Amount" data-id="200">
+                                    <strong>200</strong>
+                                </td>
+                                <td data-label="Status">1000</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">8</td>
+                                <td data-label="Gateway" data-id="9798287">Dinesh mali                                </td>
+                                <td data-label="Amount" data-id="200">
+                                    <strong>200</strong>
+                                </td>
+                                <td data-label="Status">1000</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">9</td>
+                                <td data-label="Gateway" data-id="9735637">Laxman Mishra                                </td>
+                                <td data-label="Amount" data-id="200">
+                                    <strong>200</strong>
+                                </td>
+                                <td data-label="Status">500</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">10</td>
+                                <td data-label="Gateway" data-id="1849535">RAM PAWAR                                </td>
+                                <td data-label="Amount" data-id="200">
+                                    <strong>200</strong>
+                                </td>
+                                <td data-label="Status">500</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">11</td>
+                                <td data-label="Gateway" data-id="1930622">MAKVANA01983                                </td>
+                                <td data-label="Amount" data-id="200">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">12</td>
+                                <td data-label="Gateway" data-id="2114756">Sudeep prasad nanda                                </td>
+                                <td data-label="Amount" data-id="200">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">13</td>
+                                <td data-label="Gateway" data-id="7576030">JAYANTI SAMAL                                </td>
+                                <td data-label="Amount" data-id="150">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">14</td>
+                                <td data-label="Gateway" data-id="4733171">Ashok Kumar Mallik                                 </td>
+                                <td data-label="Amount" data-id="150">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">15</td>
+                                <td data-label="Gateway" data-id="5126922">Kondaba mukind kamble                                </td>
+                                <td data-label="Amount" data-id="150">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">16</td>
+                                <td data-label="Gateway" data-id="2331928">Kamal Keot                                </td>
+                                <td data-label="Amount" data-id="150">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">17</td>
+                                <td data-label="Gateway" data-id="1119577">Ramandeep Bhardwaj                                </td>
+                                <td data-label="Amount" data-id="150">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">18</td>
+                                <td data-label="Gateway" data-id="5055050">Ashutosh Tripathi                                </td>
+                                <td data-label="Amount" data-id="150">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">19</td>
+                                <td data-label="Gateway" data-id="110002">ANIKET                                </td>
+                                <td data-label="Amount" data-id="100">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">20</td>
+                                <td data-label="Gateway" data-id="5450352">Mohd toha                                </td>
+                                <td data-label="Amount" data-id="100">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">21</td>
+                                <td data-label="Gateway" data-id="5789089">Madan lal                                </td>
+                                <td data-label="Amount" data-id="100">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">22</td>
+                                <td data-label="Gateway" data-id="furesa00q">Neetu Aggarwal                                 </td>
+                                <td data-label="Amount" data-id="100">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">23</td>
+                                <td data-label="Gateway" data-id="7356383">RAKESH KUMAR SHARMA                                </td>
+                                <td data-label="Amount" data-id="100">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">24</td>
+                                <td data-label="Gateway" data-id="1883956">NARENDRA KUMAR ROUT                                </td>
+                                <td data-label="Amount" data-id="100">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">25</td>
+                                <td data-label="Gateway" data-id="super100">Dhara singh                                </td>
+                                <td data-label="Amount" data-id="100">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">26</td>
+                                <td data-label="Gateway" data-id="3411440">Dhansukhbhai Vallabhbhai Paghdal                                </td>
+                                <td data-label="Amount" data-id="100">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">27</td>
+                                <td data-label="Gateway" data-id="6651312">MAYA DEVI                                 </td>
+                                <td data-label="Amount" data-id="100">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">28</td>
+                                <td data-label="Gateway" data-id="radhe2022">Prem Devi                                </td>
+                                <td data-label="Amount" data-id="100">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">29</td>
+                                <td data-label="Gateway" data-id="1245382">Vidhya shivaji vaijwade                                </td>
+                                <td data-label="Amount" data-id="100">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">30</td>
+                                <td data-label="Gateway" data-id="2389852">Surehbhai B patel                                </td>
+                                <td data-label="Amount" data-id="100">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">31</td>
+                                <td data-label="Gateway" data-id="2306874">Praveen Soni                                </td>
+                                <td data-label="Amount" data-id="100">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">32</td>
+                                <td data-label="Gateway" data-id="4420986">SNEHA TANTY                                </td>
+                                <td data-label="Amount" data-id="100">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">33</td>
+                                <td data-label="Gateway" data-id="gautam456">Gautam Bhalla                                </td>
+                                <td data-label="Amount" data-id="100">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">34</td>
+                                <td data-label="Gateway" data-id="6409516">Lileshwer Sinha                                </td>
+                                <td data-label="Amount" data-id="100">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">35</td>
+                                <td data-label="Gateway" data-id="1459271">RAJKUMAR VERMA                                </td>
+                                <td data-label="Amount" data-id="50">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">36</td>
+                                <td data-label="Gateway" data-id="2833654">Vinubhai kakadiya                                </td>
+                                <td data-label="Amount" data-id="50">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">37</td>
+                                <td data-label="Gateway" data-id="ems@319">Suraj Kumar                                </td>
+                                <td data-label="Amount" data-id="50">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">38</td>
+                                <td data-label="Gateway" data-id="2230722">Pratik R Patil                                </td>
+                                <td data-label="Amount" data-id="50">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">39</td>
+                                <td data-label="Gateway" data-id="6106654">Niyazuddin                                </td>
+                                <td data-label="Amount" data-id="50">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">40</td>
+                                <td data-label="Gateway" data-id="6593460">Sangita Ramgopal Divedi                                </td>
+                                <td data-label="Amount" data-id="50">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">41</td>
+                                <td data-label="Gateway" data-id="2016210">Radha Devi                                 </td>
+                                <td data-label="Amount" data-id="50">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">42</td>
+                                <td data-label="Gateway" data-id="prathalmeh">Shailesh                                </td>
+                                <td data-label="Amount" data-id="50">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">43</td>
+                                <td data-label="Gateway" data-id="8175178">Chandan                                </td>
+                                <td data-label="Amount" data-id="50">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">44</td>
+                                <td data-label="Gateway" data-id="6328079">Anil gupta                                </td>
+                                <td data-label="Amount" data-id="50">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">45</td>
+                                <td data-label="Gateway" data-id="7639408">H P                                </td>
+                                <td data-label="Amount" data-id="50">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">46</td>
+                                <td data-label="Gateway" data-id="9143016">Ramsingh                                </td>
+                                <td data-label="Amount" data-id="50">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">47</td>
+                                <td data-label="Gateway" data-id="pummysudan">Sohani lal                                </td>
+                                <td data-label="Amount" data-id="50">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">48</td>
+                                <td data-label="Gateway" data-id="2319803">AZ                                </td>
+                                <td data-label="Amount" data-id="50">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">49</td>
+                                <td data-label="Gateway" data-id="4292950">Mamta G Tiwari                                </td>
+                                <td data-label="Amount" data-id="50">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                    <tr  >
+                                <td data-label="#Transaction ID">50</td>
+                                <td data-label="Gateway" data-id="2027240">TRM                                </td>
+                                <td data-label="Amount" data-id="50">
+                                    <strong>**</strong>
+                                </td>
+                                <td data-label="Status">0</td>
+                            </tr>
+                                                </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    
+    <div id="approveModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item ">Amount : <span class="withdraw-amount "></span></li>
+                        <li class="list-group-item ">Charge : <span class="withdraw-charge "></span></li>
+                        <li class="list-group-item ">After Charge : <span class="withdraw-after_charge"></span>
+                        </li>
+                        <li class="list-group-item ">Conversion Rate : <span class="withdraw-rate"></span></li>
+                        <li class="list-group-item ">Payable Amount : <span class="withdraw-payable"></span>
+                        </li>
+                    </ul>
+                    <ul class="list-group withdraw-detail mt-1">
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn--dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div id="detailModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="withdraw-detail"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn--danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="appBottomMenu">
+        <a href="plan.html" class="item ">
+            <div class="col">
+		<i class="fa fa-gift fa-3x" style="color:white;" aria-hidden="true"></i>
+              <strong>Package</strong>
+            </div>
+        </a>
+        <a href="genealogy.html" class="item">
+            <div class="col">
+		<i class="fa fa-users fa-3x" style="color:white;" aria-hidden="true"></i>
+
+                 <strong>My Team</strong>
+            </div>
+        </a>
+        <a href="dashboard.html" class="item">
+            <div class="col">
+			<i class="fa fa-home fa-3x" style="color:white;"aria-hidden="true"></i>
+                <strong>Home</strong>
+            </div>
+        </a>
+        <a href="ticket.html" class="item">
+            <div class="col">
+               <i class="fa fa-comments fa-3x " style="color:white;" aria-hidden="true"></i>
+                <strong>Support</strong>
+            </div>
+        </a>
+         <a href="#" class="item" data-bs-toggle="modal" data-bs-target="#sidebarPanel">
+            <div class="col">
+             <i class="fa fa-qrcode fa-3x"style="color:white;" aria-hidden="true"></i>
+                <strong>Side Bar</strong>
+            </div>
+        </a>
+    </div>
+
+
+
+
+<script src="assets/templates/basic/users/vendor/global/global.min.js"></script>
+<script src="assets/templates/basic/users/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="assets/templates/basic/users/vendor/chart.js/Chart.bundle.min.js"></script>
+<script src="assets/templates/basic/users/vendor/peity/jquery.peity.min.js"></script>
+<script src="assets/templates/basic/users/vendor/apexchart/apexchart.js"></script>
+<script src="assets/templates/basic/users/js/dashboard/dashboard-1.js"></script>
+<script src="assets/templates/basic/users/vendor/owl-carousel/owl.carousel.js"></script>
+<script src="assets/templates/basic/users/js/custom.min.js"></script>
+<script src="assets/templates/basic/users/js/deznav-init.js"></script>
+<script src="assets/templates/basic/base.js"></script>
+
+<script src="assets/templates/basic/app/js/lib/bootstrap.bundle.min.js"></script>
+<script src="assets/templates/basic/app/js/plugins/splide/splide.min.js"></script>
+<script src="assets/templates/basic/app/js/base.js"></script>
+<script src="assets/templates/basic/app/ionicons/dist/ionicons.js"></script>
+<script src="assets/templates/basic/app/__manifest.json"></script>
+	
+	
+<link rel="stylesheet" href="assets/admin/css/iziToast.min.css">
+<script src="assets/admin/js/iziToast.min.js"></script>
+
+<script type="text/javascript" charset="utf8" src="assets/templates/basic/frontend/datatable/js/jquery.dataTables.js"></script>
+
+<script>
+    'use strict';
+    function notify(status,message) {
+        iziToast[status]({
+            message: message,
+            position: "topRight"
+        });
+    }
+
+    
+</script>
+
+
+
+
+<script>
+    'use strict';
+    bkLib.onDomLoaded(function() {
+        $( ".nicEdit" ).each(function( index ) {
+            $(this).attr("id","nicEditor"+index);
+            new nicEditor({fullPanel : true}).panelInstance('nicEditor'+index,{hasPanel : true});
+        });
+    });
+</script>
+
+
+
+<script>
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src="https://embed.tawk.to/58b5265f03265b89455017e7bef4cf5df99221a6";
+    s1.charset="UTF-8";
+    s1.setAttribute("crossorigin","*");
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('#datatableid').dataTable( {
+  "lengthChange": false
+});
+});
+</script>
+</body>
+</html>
